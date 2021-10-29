@@ -26,10 +26,8 @@ function checkTovardata() {
   if (tovardata.length) {
     $(".header-basket span").addClass("cart_count");
     $(".header-basket span").html(tovardata.length);
-  } else {
-    $(".header-basket span").removeClass("cart_count");
-    $(".header-basket span").html("");
-  }
+  } else {$(".header-basket span").removeClass("cart_count");
+  $(".header-basket span").html("");}
 }
 checkTovardata();
 function makeOrder() {
@@ -256,10 +254,10 @@ function writeTable() {
   tab.append(
     `<tr><th colspan="3"></th><th colspan="2">Итого:</th><th colspan="2" class="itog">${sum}</th></tr>`
   );
-  $(".total-order__full i").append(sum);
+  $(".total-order__full i").html(sum);
   //Прибавляем стоимость доставки
   let totalSum = sum + 300;
-  $(".total-price").append(totalSum);
+  $(".total-price").html(totalSum);
 }
 $(function () {
   if ($(".table").length) {
