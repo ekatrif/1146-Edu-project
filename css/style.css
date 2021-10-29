@@ -73,14 +73,14 @@ p {
   background: #fff;
 }
 .header-top {
-  letter-spacing: -0.3em;
+  /* letter-spacing: -0.3em;*/
   padding: 14px 30px;
   border-bottom: 1px solid #e3e3e3;
   min-height: 50px;
 }
 .header-nav {
   width: auto;
-  float: left;
+  /* float: left;*/
   display: inline-block;
   vertical-align: middle;
   letter-spacing: normal;
