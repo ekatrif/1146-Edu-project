@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Корзина</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Подключаем слайдер Slick 
+	<script src="js/slick.min.js"></script>  -->
+</head>
+<div class="wrapper-container">
+    <!--HEADER-->
+    <header class="header">
+        <div class="header-nav">
+            <nav>
+                <ul class="header-navigation">
+                    <li class="city-link"><a href="#" class="toggle-city"><img src="img/navigation.svg" /><b>Москва</b></a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="good.html">Страница товара</a></li>
+                    <li><a href="cart-grid.html">Корзина</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-phones">
+            <div><span>Москва</span><a href="tel:+74996536601">+7 (499) 653-66-01</a></div>
+            <div><span>Россия</span><a href="tel:+88003332613">8 800 333-26-13</a></div>
+            <div><a href="#" id="pink-link">Заказать звонок</a></div>
+            <div ><a href="#" id="pink-link-mobile">Наши телефоны</a></div>
+        </div>
+        <div class="header-logo"><a href="index.html"></a></div>
+        <div class="header-slogan">Крупнейший каталог картин<br />и постеров в России на заказ</div>
+        <div class="header-catalog"><a href="#"><i class="icon-catalog"></i><span>Весь каталог</span></a></div>
+        <div class="header-image"><a href="#">Картина из моего файла</a></div>
+        <div class="header-search"><a href="#" ><i class="icon-search"></i></a></div>
+        <div class="header-basket"><a href="cart-grid.html" <i class="icon-cart"></i><span></span></a></div>  
+        <!--Элемент мобильного меню-->
+        <div class="city-link"><a href="#" class="toggle-city"><img src="img/navigation.svg" /><b>Москва</b></a></div>
+        <!-- Меню по клику на каталог -->
+        <div class="header-menu hideMenu">
+            <div class="header-menu-inside tabs">
+            <ul class="nav tabs-caption ">
+                <li class="active"><a href="#" >Репродукции и постеры</a></li>
+                <li ><a href="#">Авторские картины</a></li>
+                <li ><a href="#">Модульные картины</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active tabs-content" >
+                    <div class="inside">
+                        <div class="menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#" class="title">Каталог</a></li>
+                                    <li><a href="#">Искусство</a></li>
+                                    <li><a href="#">Постеры</a></li>
+                                    <li><a href="#">Лимитированные принты</a></li>
+                                    <li><a href="#">Автомобильные постеры</a></li>
+                                    <li><a href="#">Карикатура</a></li>
+                                    <li><a href="#">Ретро-постеры</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#" class="title">Искусство</a></li>
+                                    <li><a href="#">Художники</a></li>
+                                    <li><a href="#">Батальные сцены</a></li>
+                                    <li><a href="#">Ботаническая иллюстрация</a></li>
+                                    <li><a href="#">Вавилонская башня</a></li>
+                                    <li><a href="#">Города и карты</a></li>
+                                    <li><a href="#">Гравюры по рисункам Брейгеля</a></li>
+                                    <li><a href="#">Графика</a></li>
+                                    <li><a href="#">Деревня</a></li>
+                                    <li><a href="#" class="black">Смотреть все</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#" class="title">Постеры</a></li>
+                                    <li><a href="#">Абстракция</a></li>
+                                    <li><a href="#">Алфавит</a></li>
+                                    <li><a href="#">Архитектура</a></li>
+                                    <li><a href="#">Глаза</a></li>
+                                    <li><a href="#">Города и карты</a></li>
+                                    <li><a href="#">Деловая инфографика</a></li>
+                                    <li><a href="#">Деньги</a></li>
+                                    <li><a href="#">Детские</a></li>
+                                    <li><a href="#" class="black">Смотреть все</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#" class="title">Новинки</a></li>
+                                    <li><a href="#">Москва - Царицыно</a></li>
+                                    <li><a href="#">Сербия</a></li>
+                                    <li><a href="#">Миронов Станислав</a></li>
+                                    <li><a href="#">Шашлык</a></li>
+                                    <li><a href="#">Гончарное дело</a></li>
+                                    <li><a href="#">Малахова Светлана</a></li>
+                                    <li><a href="#">Бургеры, хотдоги</a></li>
+                                    <li><a href="#">Осслунд Хелмер</a></li>
+                                    <li><a href="#">Мофра Максим</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="side-block">
+                            <ul>
+                                <li><a href="#"><i class="icon-image"></i>Картина из моего файла</a></li>
+                                <li><a href="#"><i class="icon-individ"></i>Заказать подборку</a></li>
+                                <li><a href="#"><i class="icon-inst"></i>Печать instagram</a></li>
+                                <li><a href="#"><i class="icon-portret"></i>Поп-арт портрет по фото</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane tabs-content" >
+                    <div class="inside">
+                        <div class="menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#" class="title">Каталог</a></li>
+                                    <li><a href="#">Анималистика</a></li>
+                                    <li><a href="#">Городской пейзаж</a></li>
+                                    <li><a href="#">Иллюстрация</a></li>
+                                    <li><a href="#">Интерьер</a></li>
+                                    <li><a href="#">Морской пейзаж</a></li>
+                                    <li><a href="#">Ню</a></li>
+                                    <li><a href="#">Пейзаж</a></li>
+                                    <li><a href="#">Портрет</a></li>
+                                    <li><a href="#">Разное</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Сюжет</a></li>
+                                    <li><a href="#">Театральный костюм</a></li>
+                                    <li><a href="#" class="title">Смотреть все</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="menu">
+                            <nav>
+                                <ul>
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="menu">
+                            <nav>
+                                <ul>
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="side-block">
+                            <ul>
+                                <li><a href="#"><i class="icon-image"></i>Картина из моего файла</a></li>
+                                <li><a href="#"><i class="icon-individ"></i>Заказать подборку</a></li>
+                                <li><a href="#"><i class="icon-inst"></i>Печать instagram</a></li>
+                                <li><a href="#"><i class="icon-portret"></i>Поп-арт портрет по фото</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane tabs-content" >
+                <div class="inside">
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#" class="title">Каталог</a></li>
+                                <li><a href="#">Абстракция</a></li>
+                                <li><a href="#">Африканские мотивы</a></li>
+                                <li><a href="#">Города</a></li>
+                                <li><a href="#">Детские</a></li>
+                                <li><a href="#">Животные и птицы</a></li>
+                                <li><a href="#">Космос</a></li>
+                                <li><a href="#">Любовь</a></li>
+                                <li><a href="#">Люди</a></li>
+                                <li><a href="#">Море</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Натюрморт</a></li>
+                                <li><a href="#">Природа</a></li>
+                                <li><a href="#">Спорт</a></li>
+                                <li><a href="#">Транспорт</a></li>
+                                <li><a href="#">Фрукты</a></li>
+                                <li><a href="#">Цветы</a></li>
+                                <li><a href="#">Эротика</a></li>
+                                <li><a href="#">Японские полиптихи</a></li>
+                                <li><a href="#" class="title">Смотреть все</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <ul>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <ul>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="side-block">
+                        <ul>
+                            <li><a href="#"><i class="icon-image"></i>Картина из моего файла</a></li>
+                            <li><a href="#"><i class="icon-individ"></i>Заказать подборку</a></li>
+                            <li><a href="#"><i class="icon-inst"></i>Печать instagram</a></li>
+                            <li><a href="#"><i class="icon-portret"></i>Поп-арт портрет по фото</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Конец меню по клику на каталог -->
+    </header>
+    <!--HEADER-END-->
+<main>
+    <div class="wrapper-main">
+        <div class="contact-page">
+            <ol class="breadcrumb">
+                <li><a href="/">Главная</a></li><li class="active">Контактная информация</li>
+            </ol>
+<h1>Контактная информация</h1>
+<p><b>Контактные телефоны</b>:&nbsp;+7 (495) 181-5107, +7 (985) 491-84-24, +7 (915) 131-05-30, 8&nbsp;(800) 201-8924</p>
+<p><b>E-Mail</b>: <a href="#">mymail@mail.ru</a>,&nbsp;<a href="#">mymail@gmail.com</a></p>
+<p><b>Время работы менеджеров нашего интернет-магазина</b>: 9.00 до 21.00 по будням и с 11.00 до 18.00 в выходные. Это означает, что в это время наш менеджер будет готов ответить по телефону на все интересующие Вас вопросы.</p>
+<p>Мы обеспечили возможность доставки картин, он-лайн показов, фото и видео-съемки картин, необходимых для удаленного выбора картин. Доставка в регионы осуществляется нашим постоянным партнером ТК СДЭК. Доставка по Москве и в ближайшее Подмосковье осуществляется на личном транспорте сотрудников. Упаковка картин перед отправкой дезинфицируется. Наш сотрудник бесконтактно доставит Вам посылку после безналичной оплаты.</p>
+<p>Парковка на придомовой территории. Въезд под шлагбаум. Перед шлагбаумом нужно позвонить по телефонам галереи:</p>
+<p><b>Адрес галереи</b>: Москва, 2-я Брестская, д. 39с3.</p>
+<div class="two-columns">
+    <div class="left">
+        <h2>Напишите нам</h2>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <div class="form-group">
+                <label >Имя и Фамилия</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-group">
+                <label >E-mail</label>
+                <input type="text" id="mail">
+            </div>
+            <div class="form-group">
+                <label>Телефон</label>
+                <input type="text" id="phone" placeholder="+7 123 456 7890">
+            </div>
+            <div class="form-group">
+                <label>Сообщение</label>
+                <textarea id="comment"></textarea>
+            </div>
+            <div class="btn-group" >
+                <input type="checkbox" id="agree" name="agree" autocomplete="off">
+                <label class="btn" for="agree">Согласие на обработку <a href="/sections/confident" target="_blank">персональных данных</a></label>
+            </div>
+            <button type="button" class="red-btn">Отправить</button>
+            </form>
+
+    </div>
+    <div class="right">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0c7c2b25975b5e96de7b9e916f7f5979d9a1f736a3376deb4b14b86fc18f5048&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+
+    </div>
+</div>
+
+</div>
+    </div>
+</main>
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer-instagram">
+        <a target="_blank" href="#" class="title"><img src="img/instagram.svg" />Инстаграм</a>
+        <div class="footer-instagram_list">
+          <div>
+            <a href="#" target="_blank"><img src="img/instagram_8090.jpg"/></a>
+          </div>
+          <div>
+            <a href="#" target="_blank"><img src="img/instagram_8089.jpg"/></a>
+          </div>
+          <div>
+            <a href="#" target="_blank"><img src="img/instagram_8088.jpg"/></a>
+          </div>
+          <div>
+            <a href="#" target="_blank"><img src="img/instagram_8087.jpg"/></a>
+          </div>
+          <div>
+            <a href="#" target="_blank"><img src="img/instagram_8086.jpg"/></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        
+          <div class="footer-column" >
+            <span class="column-title">Продукция<i class="icon-dropdown"></i></span>
+            
+              <ul class="footer-ul">
+                <li><a href="#">Картины и постеры</a></li>
+                <li><a href="#">Авторские картины</a></li>
+                <li><a href="#">Модульные картины</a></li>
+                <li><a href="#">Фотошторы</a></li>
+                <li><a href="#">Наклейки</a></li>
+                <li><a href="#">Часы</a></li>
+                <li>
+                  <a href="#">Подарочный сертификат</a>
+                </li>
+                <li><a href="#">Идеи подарков</a></li>
+                <li><a href="#">Картина из моего файла</a></li>
+                <li><a href="#">Печать Instagram</a></li>
+                <li><a href="#">Поп-арт портреты</a></li>
+                <li><a href="#">Карта сайта</a></li>
+              </ul>
+          </div>
+          <div class="footer-column" >
+            <span class="column-title"
+              >Сотрудничество<i class="icon-dropdown"></i></span>
+              <ul class="footer-ul">
+                <li><a href="#">Авторам</a></li>
+                <li><a href="#">Дизайнерам</a></li>
+                <li><a href="#">Подарочные карты</a></li>
+                <li><a href="#">Арендодателям</a></li>
+                <li><a href="#">Публичная оферта</a></li>
+                <li><a href="#">Политика возврата</a></li>
+              </ul>
+          </div>
+          <div class="footer-column" >
+            <span class="column-title" >Компания<i class="icon-dropdown"></i></span>
+            
+              <ul class="footer-ul">
+                <li><a href="#">Почему мы</a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+                <li><a href="#">Оплата онлайн</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            
+          </div>
+          <div class="footer-column" >
+            <span class="column-title"
+              >Связь с нами<i class="icon-dropdown"></i></span>
+            <ul class="footer-ul" >
+              <li>
+                <p>Москва</p>
+                <a href="tel:+74996536601">+7 (499) 653-66-01</a>
+              </li>
+              <li>
+                <p>Санкт-Петербург</p>
+                <a href="tel:+78124907532">+7 (812) 490-75-32</a>
+              </li>
+              <li>
+                <p>Россия</p>
+                <a href="tel:+88003332613">8 800 333-26-13</a>
+              </li>
+              <li>
+                <a href="#" class="callback">Заказать звонок</a>
+              </li>
+              <li><a href="mailto:info@artwall.ru">info@artwall.ru</a></li>
+            </ul>
+          </div>
+        </div>
+        
+
+    </footer>
+    <!--FOOTER-END-->
+</div>
+<script src="js/script.js"></script>
+<script src="js/contact-form.js"></script>
+<script src="js/modal.js"></script>   
+  </body>
+</html>
