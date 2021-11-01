@@ -42,7 +42,7 @@ if ($(window).width() < "767") {
 $(window).resize(function () {
   if (!flagFooter) {
     hideFooter();
-    flagFooter == true;
+    flagFooter == true;e.preventDefault();
   }
 });*/
 

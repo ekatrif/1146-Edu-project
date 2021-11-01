@@ -28,8 +28,8 @@ function itemsSum() {
   for (let i = 0; i < tovardata.length; i++) {
     cartSumItems += +$(".number")[i].textContent;
   }
-  console.log(cartSumItems);
-  console.log(typeof cartSumItems);
+  //console.log(cartSumItems);
+  //console.log(typeof cartSumItems);
 
   if (tovardata.length) {
     $(".header-basket span").addClass("cart_count");
@@ -88,7 +88,7 @@ function makeOrder() {
       tovardata = [];
       // отрисовываем пустую корзину
       writeTable();
-      // добавляем в страницу сведения о заказе
+
       //удаляем значок с количеством товара из корзины в хедере
       $(".header-basket span").removeClass("cart_count");
       $(".header-basket span").html("");

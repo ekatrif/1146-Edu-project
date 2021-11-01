@@ -61,7 +61,7 @@ $(".categories").click(function () {
     $(".catalog-list").fadeTo(600, 1);
   });
 });
-//По клике по ссылке "Все" покажем все товар
+//По клике по ссылке "Все" покажем все товары
 $(".catalog-container").on("click", ".firstI", function (e) {
   newSelection = "catalog-list-item";
   $("." + newSelection).slideDown();
