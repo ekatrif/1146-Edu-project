@@ -10,7 +10,7 @@
         width: "450",
         title: "Ошибка",
         description: "Пожалуйста, заполните все поля формы.",
-        top: "40%",
+        top: "20vh",
         left: "calc(50% - 225px)",
       },
       prop
@@ -24,7 +24,7 @@
 
     function add_styles() {
       $(".paulund_modal_box").css({
-        position: "absolute",
+        position: "fixed",
         left: options.left,
         top: options.top,
         display: "none",

@@ -909,7 +909,7 @@ form {
   margin: 0 auto;
   letter-spacing: -0.3em;
 }
-.hulk-nav__item {
+.hulk-nav-item {
   display: inline-block;
   vertical-align: middle;
   letter-spacing: normal;
@@ -920,7 +920,7 @@ form {
   position: relative;
 }
 @media (max-width: 767px) {
-  .hulk-nav__item {
+  .hulk-nav-item {
     border: 0;
     width: 100%;
     padding: 14px 20px;
@@ -928,7 +928,7 @@ form {
   }
 }
 
-.hulk-nav__item i {
+.hulk-nav-item i {
   font-size: 42px;
   margin-right: 20px;
   display: inline-block;
@@ -937,13 +937,13 @@ form {
 .icon-wallet:before {
   content: "\e90e";
 }
-.hulk-nav__item span {
+.hulk-nav-item span {
   vertical-align: middle;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   width: calc(100% - 72px);
 }
-.hulk-nav__item__hover {
+.hulk-nav-item-hover {
   position: absolute;
   width: 100%;
   background: #fff;
@@ -952,12 +952,12 @@ form {
   padding: 40px 30px;
   display: none;
 }
-.hulk-nav__item__hover p.title {
+.hulk-nav-item-hover p.title {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
-.hulk-nav__item__hover p {
+.hulk-nav-item-hover p {
   font-size: 13px;
   line-height: 1.54;
   color: #000;
@@ -968,7 +968,7 @@ form {
 .icon-img:before {
   content: "\e908";
 }
-.hulk-nav__item__hover {
+.hulk-nav-item-hover {
   position: absolute;
   width: 100%;
   background: #fff;
@@ -1044,10 +1044,10 @@ form {
   line-height: 0.72;
   padding-top: 2px;
 }
-.hulk-nav__item:hover .hulk-nav__item__hover {
+.hulk-nav-item:hover .hulk-nav-item-hover {
   display: block;
 }
-.hulk-nav__item__hover {
+.hulk-nav-item-hover {
   position: absolute;
   width: 100%;
   background: #fff;
@@ -1056,12 +1056,12 @@ form {
   padding: 40px 30px;
   display: none;
 }
-.hulk-nav__item__hover p {
+.hulk-nav-item-hover p {
   font-size: 13px;
   line-height: 1.54;
   color: #000;
 }
-.hulk-nav__item__hover p.title {
+.hulk-nav-item-hover p.title {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1341,7 +1341,7 @@ li.slick-slide {
   color: #000;
   border-color: #000;
 }
-.slider-block__grid {
+.slider-block-grid {
   margin-top: 46px;
   position: relative;
   display: -webkit-box;
@@ -1355,12 +1355,12 @@ li.slick-slide {
   justify-content: space-between;
 }
 @media (max-width: 1050px) {
-  .slider-block__grid {
+  .slider-block-grid {
     flex-wrap: wrap;
   }
 }
 
-.slider-block__item {
+.slider-block-item {
   min-width: 25%;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -1371,7 +1371,7 @@ li.slick-slide {
   transition: all 0.5s;
   margin-bottom: 20px;
 }
-.slider-block__item-wrap {
+.slider-block-item-wrap {
   margin: 0 10px;
   background: #fff;
   padding: 15px;
@@ -1397,10 +1397,7 @@ li.slick-slide {
 @media (max-width: 767px) {
 }
 
-.new_product a {
-  color: inherit;
-}
-.slider-block__item picture {
+.slider-block-item picture {
   width: 100%;
   height: 250px;
   display: -webkit-box;
@@ -1413,29 +1410,29 @@ li.slick-slide {
   -ms-flex-pack: center;
   justify-content: center;
 }
-.slider-block__item picture img {
+.slider-block-item picture img {
   max-height: 260px;
 }
-.slider-block__item .theme {
+.slider-block-item .theme {
   margin: 0 0 4px;
   font-size: 11px;
   color: #9d9d9d;
   margin-top: 30px;
 }
-.slider-block__item .theme a {
+.slider-block-item .theme a {
   color: #9d9d9d;
 }
-.slider-block__item .name {
+.slider-block-item .name {
   font-size: 13px;
   line-height: 1.31;
   margin: 0 0 11px;
 }
-.slider-block__item .variants {
+.slider-block-item .variants {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   margin: 0 0 15px;
 }
-.slider-block__item .variants span {
+.slider-block-item .variants span {
   color: #ff2780;
 }
 .variants span {
@@ -1481,7 +1478,7 @@ li.slick-slide {
   }
 }
 
-.list-block__item {
+.list-block-item {
   display: inline-block;
   vertical-align: top;
   width: calc(33.33% - 54px);
@@ -1491,34 +1488,34 @@ li.slick-slide {
   position: relative;
 }
 @media (max-width: 1200px) {
-  .list-block__item {
+  .list-block-item {
     width: calc(33.33% - 20px);
     margin-right: 30px;
   }
 }
 @media (max-width: 1050px) {
-  .list-block__item {
+  .list-block-item {
     width: calc(50% - 20px);
     margin-right: 20px;
   }
 }
 @media (max-width: 767px) {
-  .list-block__item {
+  .list-block-item {
     width: 100%;
     margin-right: 0;
   }
 }
 
-.list-block__item__img {
+.list-block-item-img {
   height: 460px;
 }
-.list-block__item__img img {
+.list-block-item-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   font-family: "object-fit: cover;";
 }
-.list-block__item__name a {
+.list-block-item-name a {
   display: block;
   margin: 0 auto;
   max-width: 325px;
@@ -1535,19 +1532,19 @@ li.slick-slide {
   bottom: -37px;
   text-decoration: none;
 }
-.list-block__item__name a {
+.list-block-item-name a {
 }
-.list-block__item__name a div {
+.list-block-item-name a div {
   display: none;
 }
 
 p {
   margin: 0 0 10px;
 }
-.list-block .list-block__item:nth-child(3n) {
+.list-block .list-block-item:nth-child(3n) {
   margin-right: 0;
 }
-.list-block__item:hover .list-block__item__name a div {
+.list-block-item:hover .list-block-item-name a div {
   display: block;
 }
 @keyframes hover-item {
@@ -1560,12 +1557,12 @@ p {
   }
 }
 
-.list-block__item:hover .list-block__item__name a {
+.list-block-item:hover .list-block-item-name a {
   max-width: 100%;
   max-height: 100%;
   animation: hover-item 0.5s linear alternate;
 }
-.list-block__item__name a div p {
+.list-block-item-name a div p {
   font-size: 13px;
   line-height: 1.54;
   margin-top: 15px;
@@ -1817,7 +1814,7 @@ p {
   margin: 0;
   display: inline-block;
   vertical-align: top;
-  width: 25%;
+  width: 100%;
   letter-spacing: normal;
   padding: 0 10px 0;
 }
@@ -1878,7 +1875,7 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
-.catalog-list__item {
+.catalog-list-item {
   padding: 15px;
   background: #fff;
   display: inline-block;
@@ -1890,38 +1887,38 @@ p {
   margin-right: 20px;
 }
 @media (max-width: 1050px) {
-  .catalog-list__item {
+  .catalog-list-item {
     width: calc(50% - 10px);
   }
 }
 @media (max-width: 767px) {
-  .catalog-list__item {
+  .catalog-list-item {
     width: 100%;
   }
 }
-.catalog-list__item:nth-child(4n) {
+.catalog-list-item:nth-child(4n) {
   margin-right: 0;
 }
 @media (max-width: 1050px) {
-  .catalog-list__item:nth-child(2n) {
+  .catalog-list-item:nth-child(2n) {
     margin-right: 0;
   }
 }
 
-.catalog-list__item a {
+.catalog-list-item a {
   color: #000;
   display: block;
 }
-.catalog-list__item .pic {
+.catalog-list-item .pic {
   height: 250px;
   margin-bottom: 20px;
 }
-.catalog-list__item picture {
+.catalog-list-item picture {
   display: block;
   width: 100%;
   height: 100%;
 }
-.catalog-list__item img {
+.catalog-list-item img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -1954,7 +1951,7 @@ p {
   font-weight: 700;
   opacity: 1 !important;
 }
-.catalog-page__header__top {
+/*.catalog-page__header__top {
   padding: 0 0 30px;
   display: flex;
   align-items: center;
@@ -1990,7 +1987,7 @@ p {
 }
 .catalog-page__header__top nav ul li + li {
   margin-left: 30px;
-}
+}*/
 .wrapper .catalog-page h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 46px;
@@ -2134,7 +2131,7 @@ p {
   }
 }
 
-.price {
+.price-group {
   position: relative;
 }
 .old-price {
@@ -2154,9 +2151,7 @@ p {
 }
 @media (max-width: 600px) {
   .old-price {
-    font-size: 14px;
-    top: 10px;
-    left: 100px;
+    display: none;
   }
 }
 
@@ -2591,6 +2586,7 @@ p.total-order__all {
 }
 
 .price::after,
+.new-price::after,
 .summa::after,
 .itog::after {
   content: "\0020\20BD";

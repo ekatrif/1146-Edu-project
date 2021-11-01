@@ -43,7 +43,7 @@ $(".catalog-container").on("click", ".alphabet", function (e) {
 //фильтрация товаров в каталоге
 
 //выбираем, какие товары отображать по умолчанию
-let newSelection = "catalog-list__item";
+let newSelection = "catalog-list-item";
 $("." + newSelection).slideDown();
 
 $(".categories").click(function () {
@@ -53,7 +53,7 @@ $(".categories").click(function () {
   $(".catalog-list").fadeTo(200, 0.1);
   newSelection = $(this).attr("rel");
   // console.log(newSelection);
-  $(".catalog-list__item").each(function () {
+  $(".catalog-list-item").each(function () {
     $(this)
       .not("." + newSelection)
       .slideUp();
@@ -63,7 +63,7 @@ $(".categories").click(function () {
 });
 //По клике по ссылке "Все" покажем все товар
 $(".catalog-container").on("click", ".firstI", function (e) {
-  newSelection = "catalog-list__item";
+  newSelection = "catalog-list-item";
   $("." + newSelection).slideDown();
   e.preventDefault();
 });

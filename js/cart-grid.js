@@ -57,7 +57,7 @@ function makeOrder() {
   formdata.date = $("#date").val();
   formdata.address = $("#address").val();
   formdata.agree = $(".btn-group input").prop("checked");
-  // console.log(formdata.agree);
+  console.log(formdata);
 
   // проверяем данные на правильность заполнения. обязательные данные - name, date и phone или mail. в tovardata должен быть хотя бы один элемент (товар).
   if (
