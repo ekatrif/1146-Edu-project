@@ -22,7 +22,9 @@ let tovardata = [
     price: 1411,
   },
 ];
-
+$(window).on("load", function () {
+  itemsSum();
+});
 function itemsSum() {
   let cartSumItems = 0;
   for (let i = 0; i < tovardata.length; i++) {
@@ -39,9 +41,6 @@ function itemsSum() {
     $(".header-basket span").html("");
   }
 }
-$(window).on("load", function () {
-  itemsSum();
-});
 
 function makeOrder() {
   if (ajaxFlag) return;
