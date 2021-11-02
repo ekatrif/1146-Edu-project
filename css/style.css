@@ -2191,6 +2191,11 @@ p {
   background: #f4f4f4;
   padding: 50px 50px 100px;
 }
+@media (max-width: 767px) {
+  .checkout {
+    padding: 50px 10px 0px;
+  }
+}
 .checkout h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
@@ -2338,6 +2343,11 @@ p.total-order__all {
   background-color: #fff;
   padding: 36px 50px;
 }
+@media (max-width: 767px) {
+  .cart-page {
+    padding: 36px 10px;
+  }
+}
 .cart-page h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 46px;
@@ -2416,6 +2426,7 @@ p.total-order__all {
 @media (max-width: 767px) {
   .header-id,
   .header-name,
+  .header-photo,
   .header-price,
   .header-quantity,
   .header-summa {
@@ -2425,6 +2436,7 @@ p.total-order__all {
 @media (max-width: 600px) {
   .header-id,
   .header-name,
+  .header-photo,
   .header-price,
   .header-quantity,
   .header-summa {

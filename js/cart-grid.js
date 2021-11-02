@@ -22,9 +22,7 @@ let tovardata = [
     price: 1411,
   },
 ];
-$(window).on("load", function () {
-  itemsSum();
-});
+
 function itemsSum() {
   let cartSumItems = 0;
   for (let i = 0; i < tovardata.length; i++) {
@@ -39,7 +37,6 @@ function itemsSum() {
     $(".header-basket span").html("");
   }
 }
-
 function makeOrder() {
   if (ajaxFlag) return;
   ajaxFlag = true;
@@ -218,6 +215,7 @@ function removeTovar(id) {
   }
   return false;
 }
+
 function writeTable() {
   // проверяем длину tovardata. если там пусто, удаляем .table и .form, добавляем .empty с текстом "Ваша корзина пуста".
   if (!tovardata.length) {
@@ -230,11 +228,11 @@ function writeTable() {
   //let tab = $(".table table");
   let tab = $(".container-table");
   let str = `<div class="header-id">№</div><div class="header-photo">Фо&shy;то</div><div class="header-name">На&shy;имено&shy;ва&shy;ние</div><div class="header-price">Цена</div><div class="header-quantity">Ко&shy;ли&shy;чест&shy;во</div><div class="header-summa">Сум&shy;ма</div><div class="header-delete"></div>`;
-
+  let i = 1;
   for (item of tovardata) {
-    str += `<div class="id" id="tovar_${item.id}">${
+    str += `<div class="id" id="tovar_${
       item.id
-    }</div><div class="photo"><img src="${
+    }">${i}</div><div class="photo"><img src="${
       item.image
     }" alt=""></div><div class="name">${item.name}</div><div class="price">${
       item.price
@@ -243,9 +241,12 @@ function writeTable() {
     }</span><button type="button">+</button></div></div><div class="summa">${
       item.price * item.qty
     }</div><div class="delete"><button type="button">+</button></div>`;
+    i = i + 1;
   }
 
   tab.html(str);
+
+  itemsSum();
 
   let sum = 0;
   tab.find(".summa").each(function () {
