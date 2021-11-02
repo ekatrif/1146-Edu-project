@@ -41,16 +41,25 @@ $(document).ready(function () {
   $(".slider").slick({
     arrows: true,
     dots: false,
-    slidesToShow: 3,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 800,
-    Infinity: true,
+    infinite: true,
+    initialSlide: 0,
+
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 1050,
+        settings: {
+          slidesToShow: 3,
         },
       },
       {

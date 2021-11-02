@@ -30,9 +30,9 @@ $(".catalog-container").on("click", ".alphabet", function (e) {
   //проверяем 1 букву каждого раздела и подсвечиваем разделы с нужной буквой
   $(".categories").each(function () {
     $(this).removeClass("highlight");
-    if (myLetter.substr(0, 3) == "Все") {
+    if (myLetter.substr(0, 3) === "Все") {
       $(this).addClass("highlight");
-      $(this).addClass("firstI");
+      $(this).removeClass("strng");
     }
     if ($(this).html().substr(0, 1).toUpperCase() == myLetter) {
       $(this).addClass("highlight");
@@ -62,8 +62,25 @@ $(".categories").click(function () {
   });
 });
 //По клике по ссылке "Все" покажем все товары
-$(".catalog-container").on("click", ".firstI", function (e) {
-  newSelection = "catalog-list-item";
-  $("." + newSelection).slideDown();
-  e.preventDefault();
+$(".catalog-container").on(
+  "click",
+  ".catalog-nav li:first-of-type",
+  function (e) {
+    newSelection = "catalog-list-item";
+    $("." + newSelection).slideDown();
+    e.preventDefault();
+  }
+);
+//Спойлер для каталога
+//Открываем
+$(".catalog-container").css({ display: "none" });
+$(".show-all").click(function () {
+  $(".catalog-container").slideDown(500);
+  $(".show-all").css({ display: "none" });
+});
+//Закрываем
+
+$(".hide-all").click(function () {
+  $(".catalog-container").slideUp(500);
+  $(".show-all").css({ display: "block" });
 });

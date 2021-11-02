@@ -1,11 +1,6 @@
 $(function () {
-  /*$(".catmenu").click(function () {
-      $(this).toggleClass("open");
-    });*/
-
   retimer();
   setInterval(retimer, 500);
-  // setInterval(slideLeft, 5000);
 });
 function retimer() {
   let limit = new Date($(".retaimer").data("fordate"));

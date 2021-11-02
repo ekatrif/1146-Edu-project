@@ -30,8 +30,6 @@ function itemsSum() {
   for (let i = 0; i < tovardata.length; i++) {
     cartSumItems += +$(".number")[i].textContent;
   }
-  //console.log(cartSumItems);
-  //console.log(typeof cartSumItems);
 
   if (tovardata.length) {
     $(".header-basket span").addClass("cart_count");
