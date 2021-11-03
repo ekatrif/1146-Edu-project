@@ -166,9 +166,6 @@ div.city-link {
   white-space: nowrap;
 }
 @media (max-width: 767px) {
-  .header-navigation {
-    grid-area: header-nav;
-  }
 }
 
 .header-navigation li + li {
@@ -464,7 +461,7 @@ span.cart_count {
   /* контейнер меню */
   .header-navigation {
     display: block;
-    position: absolute;
+    position: fixed;
     visibility: hidden;
     top: 0;
     right: -100%;
